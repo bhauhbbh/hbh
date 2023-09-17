@@ -1,5 +1,24 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router';
+import db from './Firebase/init';
+
+export default {
+  methods: {
+    async items() {
+      const colRef = collection(db, 'items');
+      // const dataObj = {
+      //   item_name: 'onion',
+      //   price: '24',
+      // };
+      // const docRef = await colRef.get();
+      console.log('document creared with id');
+    },
+  },
+  created() {
+    this.items();
+  },
+};
+
 // import HelloWorld from './components/HelloWorld.vue';
 </script>
 
@@ -21,6 +40,12 @@ import { RouterLink, RouterView } from 'vue-router';
           </div>
         </v-app-bar-title>
       </v-container>
+      <div>
+        <h1>My Firebase Data</h1>
+        <ul>
+          <li v-for="item in items" :key="item.key">{{ item.value }}</li>
+        </ul>
+      </div>
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-main>

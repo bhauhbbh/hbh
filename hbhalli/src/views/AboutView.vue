@@ -1,5 +1,9 @@
+<script setup>
+import BusinessPage from '../components/BusinessPage.vue';
+</script>
+
 <template>
-  <div class="about">
-    <v-btn> Button </v-btn>
+  <div>
+    <BusinessPage />
   </div>
 </template>
