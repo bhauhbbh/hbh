@@ -33,3 +33,18 @@
     padding: 0 2rem;
   }
 } */
+
+/* Apply fullscreen styling only on mobile devices */
+@media screen and (max-width: 767px) {
+  #app {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Ensure the app takes the full viewport height */
+}
+
+a {
+  text-decoration: none;
+}

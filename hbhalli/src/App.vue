@@ -28,24 +28,24 @@ export default {
       <v-container class="d-flex align-center py-0">
         <v-app-bar-title class="pl-0">
           <div class="d-flex align-center">
-            <v-avatar
+            <!-- <v-avatar
               class="me-3"
               image="https://cdn.vuetifyjs.com/docs/images/logos/v.png"
               rounded="0"
-            />
-            <v-button> <RouterLink to="/">HBhalli</RouterLink> </v-button>
-            <v-button class="ml-2">
-              <RouterLink to="/about">About</RouterLink></v-button
-            >
+            /> -->
+            <v-button>
+              <RouterLink to="/"
+                ><span class="text-white font-weight-black"
+                  >HBhalli</span
+                ></RouterLink
+              >
+            </v-button>
+            <v-spacer></v-spacer>
+            <v-icon icon="mdi-cart text-white" size="large" />
           </div>
         </v-app-bar-title>
       </v-container>
-      <div>
-        <h1>My Firebase Data</h1>
-        <ul>
-          <li v-for="item in items" :key="item.key">{{ item.value }}</li>
-        </ul>
-      </div>
+
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-main>
