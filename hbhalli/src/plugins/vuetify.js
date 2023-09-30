@@ -46,12 +46,12 @@ export default createVuetify({
   theme: {
     defaultTheme: 'dark',
     themes: {
-      dark: {
-        dark: true,
-        colors: {
-          primary: '#1697f6',
-        },
-      },
+      // dark: {
+      //   dark: true,
+      //   colors: {
+      //     primary: '#1697f6',
+      //   },
+      // },
     },
   },
 })

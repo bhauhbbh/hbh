@@ -1,11 +1,5 @@
 <template>
   <v-container class="bg-grey-lighten-4">
-    <div>
-      <h1>My Firebase Data</h1>
-      <ul>
-        <li v-for="item in items" :key="item.key">{{ item.value }}</li>
-      </ul>
-    </div>
     <v-row justify="center">
       <v-col v-for="(_, n) in 12" :key="n" cols="12" md="4" lg="3">
         <v-card rounded="lg" class="mx-auto elevation-0" max-width="300">

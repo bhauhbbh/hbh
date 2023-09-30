@@ -1,25 +1,7 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router';
-import db from './Firebase/init';
 
-export default {
-  methods: {
-    async items() {
-      const colRef = collection(db, 'items');
-      // const dataObj = {
-      //   item_name: 'onion',
-      //   price: '24',
-      // };
-      // const docRef = await colRef.get();
-      console.log('document creared with id');
-    },
-  },
-  created() {
-    this.items();
-  },
-};
-
-//  import HelloWorld from './components/HelloWorld.vue';
+export default {};
 </script>
 
 <template>
