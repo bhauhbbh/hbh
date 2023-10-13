@@ -1,5 +1,5 @@
 <script setup>
-import BusinessPage from '../components/BusinessPage.vue';
+import BusinessPage from '../views/BusinessPage.vue';
 </script>
 
 <template>

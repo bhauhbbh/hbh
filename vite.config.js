@@ -12,7 +12,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+
   },
+  services: [
+    require('volar-service-vetur').create(),
+  ],
   server: {
     // host: true
 

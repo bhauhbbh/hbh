@@ -1,7 +1,17 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router';
+import CartModal from './components/CartModal.vue';
 
-export default {};
+export default {
+  components: {
+    CartModal,
+  },
+  methods: {
+    openCartModal() {
+      this.$refs.cartModal.openCartModal();
+    },
+  },
+};
 </script>
 
 <template>
@@ -24,6 +34,11 @@ export default {};
             </v-button>
             <v-spacer></v-spacer>
             <v-icon icon="mdi-cart text-white" size="large" />
+            <!-- Cart modal button -->
+            <v-btn @click="openCartModal">Open Cart </v-btn>
+
+            <!-- Include the cart modal component -->
+            <cart-modal ref="cartModal"></cart-modal>
           </div>
         </v-app-bar-title>
       </v-container>
